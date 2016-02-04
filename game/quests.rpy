@@ -8,7 +8,7 @@ init -100 python:
     selectedHero = None
     selectedQuest = None
     
-    exp_to_level = [0,3,10,20,50,100]
+    __exp_to_level = [0,3,10,20,50,100]
     
     heroes_list = [ ]
     quests_list = [ ]

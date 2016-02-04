@@ -92,9 +92,9 @@ label promoteM:
     menu:
         "Pay someone to promote the tavern with you (-5 gold)." if gold >= 5:
             $ gold -= 5
-            $ populatirt += 10
+            $ popularity += 10
         "Walk around and try and talk to people":
-            $ populatiry += 3
+            $ popularity += 3
     
     return
 
@@ -130,6 +130,8 @@ label talkE:
 label tendE:
 
     "You spend the evening serving drinks."
+    
+    call tend_tables
 
     $ bar_tended = True
     
